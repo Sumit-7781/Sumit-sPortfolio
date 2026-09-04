@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Mail, Download, ChevronDown } from 'lucide-react';
 import { personal } from '@/data/portfolioData';
+import resume from '@/data/Sumit_Kumar_Chaudhari_Resume.pdf';
 
 const container = {
   hidden: {},
@@ -68,7 +69,8 @@ export function Hero() {
             Let's Connect
           </button>
           <a
-            href={personal.resumeUrl}
+            href={resume}
+            download="Sumit_Kumar_Chaudhari_Resume.pdf"
             className="flex items-center gap-2 px-6 py-3 text-sm font-medium text-gray-400 hover:text-white transition-colors"
           >
             <Download size={16} />
